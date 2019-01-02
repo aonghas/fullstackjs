@@ -1,13 +1,16 @@
-import http from 'http';
+import config from './config';
 
-const server = http.createServer();
+import express from 'express';
+const server = express();
 
-server.listen(3000);
-
-server.on('request', (req, res) => {
-  
-  res.write('Hello HTTP!\n')
-  
+server.get('/', (req, res) => {
+  res.send('Hello express');
 });
 
+server.get('/about.html', (req, res) => {
+  res.send('The about page');
+});
 
+server.listen(config.port, () => {
+  console.info('Express listening on port ', config.port);
+});
