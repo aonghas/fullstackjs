@@ -1,0 +1,23 @@
+{
+    "contests": [
+        {
+            "id": 1,
+            "categoryName": "Business/Company",
+            "contestName": "Contest 1"
+        },
+        {
+            "id": 2,
+            "categoryName": "Magazine/Newsletter",
+            "contestName": "Contest 2"
+        },
+        {
+            "id": 3,
+            "categoryName": "Software Component",
+            "contestName": "Contest 3"
+        },
+        {
+            "id": 4,
+            "categoryName": "Website",
+            "contestName": "Contest 4"
+        }]
+}
